@@ -12,10 +12,79 @@ html {
 
 body {
   font-size: 1.6rem;
+  background-image: url("../img/background.jpg");
+  background-attachment: fixed;
+  position: center;
 }
 
 img {
   max-width: 100%;
+}
+
+header{
+  background-color: black;
+  display: flex;
+}
+
+.mangastore{
+  color: white;
+  font-size: 4.5rem;
+}
+
+
+.navbar-items{
+  list-style: none;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: 90rem;
+  
+}
+.navbar-items li a{
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+
+}
+header a {
+  text-decoration: none;
+}
+.navbar-items li a:hover{
+  background-color: white;
+  color: black;
+}
+
+.footer-contenido{
+  justify-content: center;
+
+}
+footer{
+  background-color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #eee;
+}
+footer h3{
+  color:white;
+}
+
+address{
+  color: #eee;
+}
+
+.cards ul li{
+  list-style: none;
+  text-decoration: none;
+  color: #eee;
+  display: flex;
+}
+
+.cards ul li a{
+  color: #eee;
+  text-decoration: none;
+  text-align: center;
 }
 
 

@@ -8,21 +8,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>prueba</title>
 </head>
 
 <body>
   <!--Inicio header-->
-  <a href="#">MANGASTORE</a>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Productos</a></li>
-    <li><a href="#">Sobre Nosotros</a></li>
-    <li><a href="#">Contacto</a></li>
-  </ul>
+  <header>
+  <div class="navv">
+    <a class="mangastore" href="#"> MANGASTORE</a>
+    <ul class="navbar-items">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Productos</a></li>
+      <li><a href="#">Sobre Nosotros</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </div>
+  </header>
 
   <!--Inicio main-->
-
+  <section class="productos">
   <h2>Nuestros Productos</h2>
 
   <img src="img/manga1.jpg" alt="Portada Demon Slayer Vol. 1">
@@ -56,6 +61,7 @@
       <span>Vagabond - Vol. 37</span>
     </li>
   </ul>
+</section>
 
 
 
@@ -113,31 +119,35 @@
 
     <button type="submit">Enviar</button>
   </form>
-
-
+<!-- inicio footer -->
+  <footer>
+  <div class="footer-contenido">
+  <div class="card1">
   <h3>MANGASTORE</h3>
   <p>Tu tienda especializada en manga y cultura japonesa. Ediciones nuevas, colecciones y preventas.</p>
-
-
+  </div>
+  <div class="cards">
   <address>
     <h4>Contacto</h4>
-    <ul>
+    <ul class="contenido">
       <li>Teléfono: +56 9 1234 5678</li>
       <li>WhatsApp: +56 9 8765 4321</li>
       <li>Correo: <a href="mailto:hola@mangastore.cl">contacto@mangastore.cl</a></li>
       <li>Horario: Lun–Sáb 10:00–19:00</li>
     </ul>
   </address>
+  </div>
 
-
+  <div class="cards">
   <h4>Sucursales</h4>
   <ul>
     <li>Av. falsa 1234, Arica</li>
     <li>Calle mentira 567, Iquique</li>
   </ul>
+</div>
 
-
-  <nav>
+ <div class="cards">
+  <nav class="links">
     <h4>Enlaces</h4>
     <ul>
       <li><a href="#">Términos y condiciones</a></li>
@@ -146,6 +156,7 @@
       <li><a href="#">Preguntas frecuentes</a></li>
     </ul>
   </nav>
+</div>
 
 
 
@@ -155,6 +166,9 @@
     <li><a href="#" aria-label="Instagram">Instagram</a></li>
     <li><a href="#" aria-label="X (Twitter)">X</a></li>
   </ul>
+</div>
+</footer>
+<!-- fin footer -->
 
 
 </body>
