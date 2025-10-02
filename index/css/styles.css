@@ -1,7 +1,7 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  height: 100%;
 }
 
 *,
@@ -11,81 +11,127 @@ html {
 }
 
 body {
+  margin: 0;
   font-size: 1.6rem;
-  background-image: url("../img/background.jpg");
+  height: 100%;
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  position: center;
 }
 
 img {
   max-width: 100%;
 }
-
-header{
-  background-color: black;
-  display: flex;
-}
-
-.mangastore{
-  color: white;
-  font-size: 4.5rem;
-}
-
-
-.navbar-items{
-  list-style: none;
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  align-items: center;
-  margin-left: 90rem;
-  
-}
-.navbar-items li a{
-  color: white;
-  list-style-type: none;
-  text-decoration: none;
-
-}
-header a {
-  text-decoration: none;
-}
-.navbar-items li a:hover{
+.ul-header li a:hover{
   background-color: white;
   color: black;
 }
-
-.footer-contenido{
-  justify-content: center;
-
-}
-footer{
+.header{
+  display: flex;
   background-color: black;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-header{
+  display: flex;
+}
+.ul-header{
+  display: flex;
+  gap:3rem;
+}
+a{
+  color:white;
+  text-decoration: none;
+}
+
+.titulo{
+  font-size: 4.5rem;
+}
+
+.container-productos{
+  display: flex;
+  background-color: #eee;
+}
+
+.nuestros-productos-items{
+  display: flex;
+  gap: 3rem;
+}
+.nuestros-productos{
   text-align: center;
+  margin-left: 5rem;
+}
+.producto{
   display: flex;
   flex-direction: column;
-  color: #eee;
+  width: 20%;
 }
-footer h3{
-  color:white;
-}
-
-address{
-  color: #eee;
-}
-
-.cards ul li{
-  list-style: none;
-  text-decoration: none;
-  color: #eee;
-  display: flex;
-}
-
-.cards ul li a{
-  color: #eee;
-  text-decoration: none;
+.mangas-vendidos{
   text-align: center;
 }
+.lineas{
+  background-color: #999;
+  padding: .1rem;
+}
 
+.ul-mangas{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40rem;
+}
+.ul-mangas li{
+  display: flex;
+  gap: 5rem;
+  margin-right: 10rem;
+  align-items: center;
+}
+.ul-mangas li img{
+  height: 8rem;
+}
+.blog{
+  display: flex;
+  flex-direction: column;
+}
+.blog h2{
+  text-align: center;
+}
+.blog-item{
+  display: flex;
+  background-color:  lightcyan;
+  align-items: center;
+}
+.blog-item img{
+  width: 20%;
+}
+.blog-info{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+.about{
+  text-align: center;
+  padding: 2rem;
+  background-color: white;
+}
 
-
+.contactanos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+  background-color: white;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  justify-content: center;
+  gap: 2rem;
+}
+.button{
+  background-color: black;
+  color: #fff;
+}
